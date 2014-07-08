@@ -1,0 +1,57 @@
+/* color scheme 
+#0D5DFF
+#0C8FE8
+#00DBFF
+#0CE8CB
+#0DFF9B
+
+*/
+
+    html 
+    { 
+        background: url(lib/img/vintage_speckles.png) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    body
+    {
+        font-family: 'Ubuntu', sans-serif;  
+        color: #0D5DFF;
+    }
+
+    .global__wrap_title 
+    { 
+        text-align: center
+    }
+
+    .circle__project-management, .circle__title_project-management
+    {
+        display: inline-block;
+    }
+
+    .circle__project-management
+    {
+        display: none;
+        background-color: transparent;
+        border: 2px solid #00DBFF;
+        width: 30px;
+        height: 30px;
+        border-radius: 90px;
+        top: 280px;
+        left: 40px;
+    }
+
+    .circle__project-management div
+    {
+        /* h=radius, a=h/sqrt(2), height=width=2a, left=top=h-a */
+        height: 128px;
+        left: 26px; 
+        position: absolute;
+        top: 26px;
+        width: 128px;
+    }
+    .circle__wrap {text-align: center; padding: 15em 0 0 0; }
+        
