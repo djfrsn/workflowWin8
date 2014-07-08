@@ -30,11 +30,11 @@
     .circle__project-management, .circle__title_project-management
     {
         display: inline-block;
+        cursor: pointer;
     }
 
     .circle__project-management
-    {
-        display: none;
+    {    
         background-color: transparent;
         border: 2px solid #00DBFF;
         width: 30px;
@@ -43,7 +43,24 @@
         top: 280px;
         left: 40px;
     }
+    
+    .hidden
+    {
+        visibility: hidden;
+    }
 
+    .visible
+    {
+        visibility: visible;
+    }
+
+    .animate-infinite 
+    {
+        animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+    }
+    
     .circle__project-management div
     {
         /* h=radius, a=h/sqrt(2), height=width=2a, left=top=h-a */
