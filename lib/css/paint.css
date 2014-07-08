@@ -34,7 +34,9 @@
     }
 
     .circle__project-management
-    {    
+    {   
+        margin-left: 8px;
+        vertical-align: -4.07px;
         background-color: transparent;
         border: 2px solid #00DBFF;
         width: 30px;
