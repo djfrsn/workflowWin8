@@ -55,16 +55,24 @@ Operating Systems
 */
     .os__wrap 
     {
-        
+        text-align: center;
     }    
     .win8 
     {
-        
+        text-indent: -9999px;
+        background: url(lib/img/win8.png);
+    }
+    .divider
+    {
+        font-size: 90px;
     }
     
     .osx
     {
-        
+        text-indent: -9999px;
+        background: url(lib/img/osx.png);
+        height: 24px;
+        width: 25px;
     }
     
 
