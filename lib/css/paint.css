@@ -27,13 +27,53 @@
         text-align: center
     }
 
-    .circle__project-management, .circle__title_project-management
-    {
+    .circle__project-management, .circle__title_project-management, .win8, .divider, .osx 
+    { 
         display: inline-block;
-        cursor: pointer;
+        cursor: pointer; /* display cursor pointer instead of default since the elements are not wrappend in <a> tags */
+    } 
+
+    /*
+Utility Classes
+*/
+    .vishidden
+    {
+        visibility: hidden;
     }
 
-    .circle__project-management
+    .visible
+    {
+        visibility: visible;
+    }
+    .dishidden 
+    {
+        display: none;
+    }
+
+    /*
+Operating Systems 
+*/
+    .os__wrap 
+    {
+        
+    }    
+    .win8 
+    {
+        
+    }
+    
+    .osx
+    {
+        
+    }
+    
+
+    /*
+Circle Pulse
+*/
+    .circle__wrap {text-align: center; padding: 15em 0 0 0; }
+    
+    .circle
     {   
         margin-left: 8px;
         vertical-align: -4.07px;
@@ -45,25 +85,8 @@
         top: 280px;
         left: 40px;
     }
-    
-    .hidden
-    {
-        visibility: hidden;
-    }
 
-    .visible
-    {
-        visibility: visible;
-    }
-
-    .animate-infinite 
-    {
-        animation-iteration-count: infinite;
-        -moz-animation-iteration-count: infinite;
-        -webkit-animation-iteration-count: infinite;
-    }
-    
-    .circle__project-management div
+    .circle div
     {
         /* h=radius, a=h/sqrt(2), height=width=2a, left=top=h-a */
         height: 128px;
@@ -72,5 +95,11 @@
         top: 26px;
         width: 128px;
     }
-    .circle__wrap {text-align: center; padding: 15em 0 0 0; }
-        
+    
+   .animate-infinite 
+    {
+        animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+    }     
+
