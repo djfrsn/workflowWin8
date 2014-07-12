@@ -73,8 +73,6 @@ Operating Systems
     }
     .divider
     {
-        position: relative;
-        top: 65px;
         padding: 0 15px 0 15px;
         font-size: 30px;
         color: #0CE8CB;
@@ -90,6 +88,35 @@ Operating Systems
         width: 200px;   
         height: 87px;
     } 
+
+
+
+
+
+    /*
+Windows svg
+*/
+
+svg.win8 {
+width: 152.114285714px;
+height: 35px;
+}
+svg.win8 * {
+fill: #6dc2e9;
+}
+
+svg.win8 * {
+fill: #00bcf2;
+}
+
+    /*
+OS X svg
+*/
+
+svg {
+width: 87px;
+height: 33px;
+}
 
     /*
 OS Select
