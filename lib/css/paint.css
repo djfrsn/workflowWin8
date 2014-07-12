@@ -88,8 +88,26 @@ Operating Systems
         background: url(../img/osx.png);
         width: 200px;   
         height: 87px;
-    }
-    
+    } 
+
+    /*
+OS Select
+*/
+
+.levitate {
+  animation: levitate 1.2s alternate ease-in-out infinite;
+}
+
+@keyframes levitate {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, 2px);
+  }
+}
+
 
     /*
 Circle Pulse
