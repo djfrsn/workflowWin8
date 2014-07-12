@@ -9,7 +9,7 @@
 
     body 
     { 
-        background: url(../img/vintage_speckles.png) no-repeat center center fixed; 
+        background: url('../img/vintage_speckles.png');
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -201,4 +201,9 @@ Circle Pulse
 
 .choose__os {
     
+}
+
+.svg__text {
+    position: absolute;
+    top:
 }
