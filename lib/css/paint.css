@@ -59,7 +59,7 @@ Operating Systems
     .os__wrap 
     {
         text-align: center;
-        padding-top: 200px;
+        padding-top: 190px;
     }    
     h1.win8 
     {
@@ -198,3 +198,7 @@ Circle Pulse
         -webkit-animation-iteration-count: infinite;
     }     
 
+
+.choose__os {
+    
+}
