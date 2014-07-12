@@ -7,9 +7,9 @@
 
 */
 
-    html 
+    body 
     { 
-        background: url(lib/img/vintage_speckles.png) no-repeat center center fixed; 
+        background: url(../img/vintage_speckles.png) no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -71,11 +71,13 @@ Operating Systems
         width: 254px;   
         height: 110px;
     }
-    .divider
+   .divider 
     {
-        padding: 0 15px 0 15px;
+       padding: 0 15px 0 15px;
         font-size: 30px;
+        position: relative;
         color: #0CE8CB;
+        bottom: 7px;
     }
     
     h1.osx
