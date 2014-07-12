@@ -73,7 +73,7 @@ Operating Systems
     }
    .divider 
     {
-       padding: 0 15px 0 15px;
+       padding: 0 11.5px 0 15px;
         font-size: 30px;
         position: relative;
         color: #0CE8CB;
@@ -99,15 +99,15 @@ Operating Systems
 Windows svg
 */
 
-svg.win8 {
+svg.win8-svg {
 width: 152.114285714px;
 height: 35px;
 }
-svg.win8 * {
+svg.win8-svg * {
 fill: #6dc2e9;
 }
 
-svg.win8 * {
+svg.win8-svg * {
 fill: #00bcf2;
 }
 
@@ -115,7 +115,7 @@ fill: #00bcf2;
 OS X svg
 */
 
-svg {
+svg.osx-svg {
 width: 87px;
 height: 33px;
 }
