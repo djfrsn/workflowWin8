@@ -62,21 +62,8 @@ Operating Systems
         padding-top: 190px;
     }    
 
-    .os svg
-    {
-        transition: left 0.5s;
-    }
-    
-    .win8-svg 
-    {
-        border: 0;
-        font: 0/0 a;
-        text-shadow: none;
-        color: transparent;
-        background: url(../img/win8.png);
-        width: 254px;   
-        height: 110px;
-    }
+
+
    .divider 
     {
        padding: 0 11.5px 0 15px;
@@ -85,42 +72,56 @@ Operating Systems
         color: #0CE8CB;
         bottom: 7px;
     }
-    
-    .osx-svg
-    {
-        border: 0;
-        font: 0/0 a;
-        text-shadow: none;
-        color: transparent;
-        background: url(../img/osx.png);
-        width: 200px;   
-        height: 87px;
-    } 
+
 
     /*
 Windows svg
 */
 
-svg.win8-svg {
-width: 152.114285714px;
-height: 35px;
-}
-svg.win8-svg * {
-fill: #6dc2e9;
-}
+    svg.win8-svg {
+        width: 152.114285714px;
+        height: 35px;
+        border: 0;
+        font: 0/0 a;
+        text-shadow: none;
+        color: transparent;
+    }
+    svg.win8-svg * {
+        fill: #6dc2e9;
+    }
+    
+    svg.win8-svg * {
+        fill: #00bcf2;
+    }
 
-svg.win8-svg * {
-fill: #00bcf2;
-}
+    .center__win8 
+    {
+        transform: translateX(68px);
+        -webkit-transform:translateX(68px);
+        transition: all 2s;
+    }
 
     /*
 OS X svg
 */
 
-svg.osx-svg {
-width: 87px;
-height: 33px;
-}
+    svg.osx-svg 
+    {
+        width: 87px;
+        height: 33px;
+        border: 0;
+        font: 0/0 a;
+        text-shadow: none;
+        color: transparent;
+    }
+
+    .center__osx 
+    {
+        transform: translateX(-100px);
+        -webkit-transform:translateX(-100px);
+        transition: all 2s;
+    }
+
 
     /*
 Levitate
