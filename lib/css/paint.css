@@ -7,9 +7,9 @@
 
 */
 
-    html 
+    body 
     { 
-        background: url(lib/img/vintage_speckles.png) no-repeat center center fixed; 
+        background: url('../img/vintage_speckles.png');
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -59,7 +59,7 @@ Operating Systems
     .os__wrap 
     {
         text-align: center;
-        padding-top: 200px;
+        padding-top: 190px;
     }    
     h1.win8 
     {
@@ -71,13 +71,13 @@ Operating Systems
         width: 254px;   
         height: 110px;
     }
-    .divider
+   .divider 
     {
-        position: relative;
-        top: 65px;
-        padding: 0 15px 0 15px;
+       padding: 0 11.5px 0 15px;
         font-size: 30px;
+        position: relative;
         color: #0CE8CB;
+        bottom: 7px;
     }
     
     h1.osx
@@ -91,24 +91,77 @@ Operating Systems
         height: 87px;
     } 
 
+
+
+
+
+    /*
+Windows svg
+*/
+
+svg.win8-svg {
+width: 152.114285714px;
+height: 35px;
+}
+svg.win8-svg * {
+fill: #6dc2e9;
+}
+
+svg.win8-svg * {
+fill: #00bcf2;
+}
+
+    /*
+OS X svg
+*/
+
+svg.osx-svg {
+width: 87px;
+height: 33px;
+}
+
     /*
 OS Select
 */
 
-.levitate {
-  animation: levitate 1.2s alternate ease-in-out infinite;
+.levitate{
+  -webkit-animation: 
+        levitate 3s infinite;  
+    -moz-animation: 
+        levitate 3s infinite;
 }
 
-@keyframes levitate {
+@-webkit-keyframes levitate{
   0% {
-    transform: translate(0, 0);
-  }
+         -webkit-transform: translateY(-5px);
 
-  100% {
-    transform: translate(0, 2px);
-  }
+   }
+   
+    50% {
+           -webkit-transform: translateY(0px);
+   }
+
+100%{
+         -webkit-transform: translateY(-5px);
 }
 
+}
+
+@-moz-keyframes levitate{
+  0% {
+         -moz-transform: translateY(-5px);
+   }
+
+    50% {
+           -moz-transform: translateY(3px);
+
+   }
+
+100%{
+         -moz-transform: translateY(-5px);
+}
+
+}
 
     /*
 Circle Pulse
@@ -145,3 +198,12 @@ Circle Pulse
         -webkit-animation-iteration-count: infinite;
     }     
 
+
+.choose__os {
+    
+}
+
+.svg__text {
+    position: absolute;
+    top:
+}
