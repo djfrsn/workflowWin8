@@ -33,8 +33,11 @@
     .circle__project-management, .circle__title_project-management, .win8, .divider, .osx 
     { 
         display: inline-block;
+    }
+ .circle__project-management, .circle__title_project-management
+    {
         cursor: pointer; /* display cursor pointer instead of default since the elements are not wrappend in <a> tags */
-    } 
+    } /* Need to refactor circle pulse to add a pointer */
 
     /*
 Utility Classes
@@ -48,9 +51,20 @@ Utility Classes
     {
         visibility: visible;
     }
+
     .dishidden 
     {
         display: none;
+    }
+
+    .cursor-default
+    { 
+        cursor: default; 
+    }
+
+    .cursor-pointer
+    { 
+        cursor: pointer; 
     }
 
     /*
