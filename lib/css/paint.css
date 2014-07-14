@@ -33,8 +33,11 @@
     .circle__project-management, .circle__title_project-management, .win8, .divider, .osx 
     { 
         display: inline-block;
+    }
+ .circle__project-management, .circle__title_project-management
+    {
         cursor: pointer; /* display cursor pointer instead of default since the elements are not wrappend in <a> tags */
-    } 
+    } /* Need to refactor circle pulse to add a pointer */
 
     /*
 Utility Classes
@@ -48,9 +51,20 @@ Utility Classes
     {
         visibility: visible;
     }
+
     .dishidden 
     {
         display: none;
+    }
+
+    .cursor-default
+    { 
+        cursor: default; 
+    }
+
+    .cursor-pointer
+    { 
+        cursor: pointer; 
     }
 
     /*
@@ -61,16 +75,9 @@ Operating Systems
         text-align: center;
         padding-top: 190px;
     }    
-    h1.win8 
-    {
-        border: 0;
-        font: 0/0 a;
-        text-shadow: none;
-        color: transparent;
-        background: url(../img/win8.png);
-        width: 254px;   
-        height: 110px;
-    }
+
+
+
    .divider 
     {
        padding: 0 11.5px 0 15px;
@@ -79,93 +86,61 @@ Operating Systems
         color: #0CE8CB;
         bottom: 7px;
     }
-    
-    h1.osx
-    {
-        border: 0;
-        font: 0/0 a;
-        text-shadow: none;
-        color: transparent;
-        background: url(../img/osx.png);
-        width: 200px;   
-        height: 87px;
-    } 
-
-
-
 
 
     /*
 Windows svg
 */
 
-svg.win8-svg {
-width: 152.114285714px;
-height: 35px;
-}
-svg.win8-svg * {
-fill: #6dc2e9;
-}
+    svg.win8-svg {
+        width: 152.114285714px;
+        height: 35px;
+        border: 0;
+        font: 0/0 a;
+        text-shadow: none;
+        color: transparent;
+    }
+    svg.win8-svg * {
+        fill: #6dc2e9;
+    }
+    
+    svg.win8-svg * {
+        fill: #00bcf2;
+    }
 
-svg.win8-svg * {
-fill: #00bcf2;
-}
+    .center__win8 
+    {
+        transform: translateX(68px);
+        -webkit-transform:translateX(68px);
+        transition: all 2s;
+    }
 
     /*
 OS X svg
 */
 
-svg.osx-svg {
-width: 87px;
-height: 33px;
-}
+    svg.osx-svg 
+    {
+        width: 87px;
+        height: 33px;
+        border: 0;
+        font: 0/0 a;
+        text-shadow: none;
+        color: transparent;
+    }
 
-    /*
-OS Select
-*/
+    .center__osx 
+    {
+        transform: translateX(-100px);
+        -webkit-transform:translateX(-100px);
+        transition: all 2s;
+    }
 
-.levitate{
-  -webkit-animation: 
-        levitate 3s infinite;  
-    -moz-animation: 
-        levitate 3s infinite;
-}
-
-@-webkit-keyframes levitate{
-  0% {
-         -webkit-transform: translateY(-5px);
-
-   }
-   
-    50% {
-           -webkit-transform: translateY(0px);
-   }
-
-100%{
-         -webkit-transform: translateY(-5px);
-}
-
-}
-
-@-moz-keyframes levitate{
-  0% {
-         -moz-transform: translateY(-5px);
-   }
-
-    50% {
-           -moz-transform: translateY(3px);
-
-   }
-
-100%{
-         -moz-transform: translateY(-5px);
-}
-
-}
 
     /*
 Levitate
 */
+
 .levitate{
   -webkit-animation: 
         levitate 3s infinite;  
