@@ -30,11 +30,11 @@
         text-transform: capitalize; 
     }
 
-    .circle__project-management, .circle__title_project-management, .win8, .divider, .osx 
+    .circle, .pulseTrigger, .win8, .divider, .osx 
     { 
         display: inline-block;
     }
- .circle__project-management, .circle__title_project-management
+ .circle, .pulseTrigger
     {
         cursor: pointer; /* display cursor pointer instead of default since the elements are not wrappend in <a> tags */
     } /* Need to refactor circle pulse to add a pointer */
@@ -181,10 +181,35 @@ Levitate
 }
 
     /*
+Categories
+*/
+    
+    .pm-quote 
+    { 
+        color: #0D5DFF;
+        opacity: 0.36;
+        margin-bottom: 2.4em;
+    }
+    
+    .pm-quote span
+    {
+        position: relative;
+        top: 10px;
+    }
+
+
+
+    /*
 Circle Pulse
 */
-    .circle__wrap {text-align: center; padding: 15em 0 0 0; }
-    
+    .category 
+    {
+    text-align: center;
+    padding: 10em 0 0 0;
+    width: inherit !important; /* ugly important hacks override foundation to center the category */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    }
     .circle
     {   
         margin-left: 8px;
@@ -196,6 +221,7 @@ Circle Pulse
         border-radius: 90px;
         top: 280px;
         left: 40px;
+        -webkit-transition: all 5s ease; 
     }
 
     .circle div
@@ -214,3 +240,12 @@ Circle Pulse
         -moz-animation-iteration-count: infinite;
         -webkit-animation-iteration-count: infinite;
     }     
+
+   /*
+Expand Circle
+*/
+.expandCircle 
+    {
+        width: 180px;
+        height: 180px;
+    }
