@@ -30,11 +30,11 @@
         text-transform: capitalize; 
     }
 
-    .circle, .category__title_project-management, .win8, .divider, .osx 
+    .circle, .pulseTrigger, .win8, .divider, .osx 
     { 
         display: inline-block;
     }
- .circle, .category__title_project-management
+ .circle, .pulseTrigger
     {
         cursor: pointer; /* display cursor pointer instead of default since the elements are not wrappend in <a> tags */
     } /* Need to refactor circle pulse to add a pointer */
@@ -221,6 +221,7 @@ Circle Pulse
         border-radius: 90px;
         top: 280px;
         left: 40px;
+        -webkit-transition: all 5s ease; 
     }
 
     .circle div
@@ -240,3 +241,11 @@ Circle Pulse
         -webkit-animation-iteration-count: infinite;
     }     
 
+   /*
+Expand Circle
+*/
+.expandCircle 
+    {
+        width: 180px;
+        height: 180px;
+    }
