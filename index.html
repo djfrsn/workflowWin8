@@ -155,6 +155,29 @@
     <script src='lib/js/brush.js'></script>
     <script src='lib/js/vendor/foundation.min.js'></script>
     <script>    
+            function helper()
+    {
+        $('.os__wrap').remove();
+        
+        $('.loadCategories')
+            .load('win8.html')
+            .removeClass('dishidden')
+            .addClass('animated fadeIn');
+        
+        $('.category').show();
+        var waitForWin8;
+        waitForWin8 = setTimeout( function() 
+        {
+            $('.pm-quote').remove();
+            $('.circle').removeClass('vishidden').addClass('expandCircle'); 
+            // these calls on .circle are made after clicking a category    
+        }, 100); 
+        
+    }
+    helper();
+                
+
+       
       $(document).foundation();
     </script>
   </body>
