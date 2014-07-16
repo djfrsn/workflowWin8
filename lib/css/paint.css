@@ -183,6 +183,15 @@ Categories
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
+.category__title h1
+{
+ margin: 0;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 .category__title
 {
   position: relative;
