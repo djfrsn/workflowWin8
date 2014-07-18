@@ -249,3 +249,6 @@ Expand Circle
         width: 180px;
         height: 180px;
     }
+.category__title h1 {
+    font-size: 1em;
+}
