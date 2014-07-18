@@ -181,7 +181,7 @@ Levitate
 }
 
     /*
-Categories
+Quotes
 */
     
     .pm-quote 
@@ -197,19 +197,38 @@ Categories
         top: 10px;
     }
 
+    /*
+Category
+*/
 
+    .category { 
+        text-align: center;
+        padding: 10em 0 0 0;
+        width: inherit !important; /* ugly important hacks override foundation to center the category */
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .category__title h1
+    {
+        font-size: 2em;
+        transition: all 2s;
+    }
+
+    .category_small 
+    { 
+        width: 105px;    
+    }
+
+    .category__title_small h1 
+    {
+        font-size: 1em
+    }
 
     /*
 Circle Pulse
 */
-    .category 
-    {
-    text-align: center;
-    padding: 10em 0 0 0;
-    width: inherit !important; /* ugly important hacks override foundation to center the category */
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    }
+
     .circle
     {   
         margin-left: 8px;
@@ -249,6 +268,4 @@ Expand Circle
         width: 180px;
         height: 180px;
     }
-.category__title h1 {
-    font-size: 1em;
-}
+
